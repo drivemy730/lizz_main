@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+.secccion-como-ayudarte
+{
+    margin-bottom: 5rem;
+}
 .secccion-como-ayudarte-cajita-H3
 {
     font-size: 2.10rem;
@@ -17,6 +21,11 @@
     margin-bottom: 8.5rem;
 }
 
+.secccion-como-ayudarte-cajita-texto
+{
+    display: flex;
+    flex-direction: column;
+}
 .secccion-como-ayudarte-cajita-texto p{
     font-family: Kodchasan;
     font-size: 1.8rem; /* Slightly larger font size */
@@ -25,18 +34,13 @@
 
 }
 
-.secccion-como-ayudarte-cajotaResponsive
-{
-    display: flex;
-    margin-bottom: 15rem;
-    margin-top: 10rem;
-    justify-content: space-evenly;
-}
 
-.seccion-nuestros-servicios-cajota-responsive
+.groomingSectionContainer
 {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    margin-bottom: 10rem;
 }
 
 .secccion-como-ayudarte-cajita-perro-punch
@@ -71,7 +75,7 @@
 
 
 
-.seccion-nuestros-servicios-cajita-h3,
+.groomingSectionh3,
 .secccion-como-ayudarte-cajita-H3 {
     text-align: center; /* Center the text */
     font-size: 1.8rem; /* Increase font size */
@@ -91,7 +95,7 @@
     transition: background 0.3s; /* Smooth background transition */
 }
 
-.seccion-nuestros-servicios-cajita-h3:hover,
+.groomingSectionh3:hover,
 .secccion-como-ayudarte-cajita-H3:hover {
     transform: scale(1.05); /* Slightly scale up on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
@@ -102,12 +106,12 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .groomingSectionImagesAndTitle h2
 {
- font-size: 3rem;
+ font-size: 2.0rem;
 }
 
 .imagesGrooming
@@ -134,7 +138,7 @@
     text-align: center; /* Center text */
     transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-    width:35rem;
+    width:38rem;
 }
 
 .tituloGroominADomicilio 
@@ -145,7 +149,7 @@
  justify-content: space-between;
 }
 
-.textGrooming
+.groomingSectionText
 {
     font-size: 1.8rem;
     font-family: Kodchasan; 
@@ -153,7 +157,10 @@
 
 }
 
-
+.titlePlacas h2
+{
+    font-size: 2.5rem;
+}
 .tituloGroominADomicilio:hover, .titlePlacas:hover
 {
     transform: scale(1.05); /* Slightly scale up on hover */
@@ -171,11 +178,11 @@
 }
 
 
-.groomingServices1, .groomingServices2, .groomingServices3
+.groomingServices1
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
 }
 
@@ -227,38 +234,20 @@
 
 }
 
-.placasSection
+
+
+
+.groomingSectionBtn
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-
-
-.video-container {
-    display: flex;
-    justify-content: center; /* Center the video container */
-    align-items: center;     /* Center the video container vertically */
-    margin: 2rem 0;          /* Add some space around the container */
-}
-
-.responsive-video {
-    width: 300px;  /* Set the width of the video */
-    height: 300px; /* Set the height of the video */
-    border-radius: 60%; /* Make the video circular */
-    object-fit: cover; /* Cover the container area without distorting the video */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow effect */
-}
-
-
 
 .cotizaButon {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-
-
 
 
 
@@ -282,6 +271,65 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
 }
 
+
+/* PLACAS SECTION */
+
+.placasSection
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.placasgSectionImagesAndTitle
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10rem;
+}
+
+.placasSection-slideshow-Parentcontainer
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+.placasSection-slideshow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(36, 35, 35);
+    height: 12rem; /* Set a fixed height for the slideshow container */
+    overflow: hidden; /* Hide any overflow from the images */
+}
+
+.slide {
+    width: 20rem; /* Width of the slide */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.slide img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%;; /* Adjust max height to fit within the container */
+    object-fit: contain; /* Crop if necessary to maintain aspect ratio */
+
+}
+
+.slide img:hover
+{
+    transform: scale(2.00); /* Slightly scale up on hover */
+}
 
 
 @media(max-width:489px) {
