@@ -1,0 +1,166 @@
+
+
+h1{
+    text-align: center; /* Center the text */
+    font-size: 2.5rem; /* Increase font size */
+    font-weight: 700; /* Make the font bolder */
+    text-shadow: 0px 4px 4px #0DADB2; /* Keep the text shadow */
+    font-family: Kodchasan; /* Keep your font */
+    text-transform: capitalize; /* Capitalize text */
+    margin-top: 4rem; /* Top margin */
+    margin-bottom: 4.5rem; /* Bottom margin */
+    background: linear-gradient(90deg, #07A4A9, #FFB70D); /* Add a gradient background */
+    width: 90%;
+    margin-left: 4rem;
+    color: white; /* Change text color for contrast */
+    padding: 1rem; /* Add padding */
+    border-radius: 10px; /* Round the corners */
+    border-bottom: 4px solid #FFB70D; /* Optional underline */
+    transition: background 0.3s; /* Smooth background transition */
+    background: linear-gradient(90deg, #FFB70D, #07A4A9); /* Reverse gradient on hover */
+}
+
+
+.patitasLeft img , .patitasRight img
+{
+
+    width: 10rem;
+
+}
+
+.main-content
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    font-size: 2rem;
+    color: #ff8a00;
+    text-transform: uppercase;
+    margin-top: 6rem;
+    letter-spacing: 0.05em;
+    padding: 0;
+}
+
+.flechasIzq
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+
+}
+
+.columnaProductos
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 4rem;
+}
+
+.flechasDerecha
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.arrow:hover {
+    color: #ff8a00;
+}
+
+.arrow {
+    font-size: 3rem;
+    color: #ff8a00;
+    cursor: pointer;
+}
+ 
+
+.productoUno,.productoDos,.productoTres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #07A4A9, #FFB70D); 
+    border: 2px solid #ff8a00;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 20rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.productoUno:hover, .productoDos:hover, .productoTres:hover {
+    transform: translateY(-5px);
+}
+
+.imgProducto
+{
+    width: 11rem;
+    border-radius: 8px;
+
+}
+
+.imgProducto:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+p{
+    padding: 0;
+    margin-top: 1rem;
+    color: #555;
+    font-size: 1.2rem;
+    font-family: Kodchasan;
+    text-align: center;
+    margin-right: 5rem;
+    
+}
+
+
+.cart-item-info h3 {
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: Kodchasan;
+    margin-bottom: 1rem;
+    margin-right: 6rem;
+    transition: color 0.3s, border-left-color 0.3s, font-weight 0.3s;
+}
+
+.cart-item-info h3:hover
+{
+   
+    color: #0056b3; /* Stronger, darker blue for better contrast */
+    border-left-color: #FFB70D; /* Bright yellow left border on hover */
+    font-weight: bold; /* Make the text bold on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to make text stand out */
+    cursor: pointer; /* Pointer cursor on hover */
+    
+    
+}
+
+.cart-item-remove {
+    padding: 1rem 2rem; /* Increase padding for a larger button */
+    font-size: 1.2rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: #fff; /* White text */
+    background-color: #07A4A9; /* Primary background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    margin-top: 0.2rem;
+    justify-content: center;
+    margin-left: 8.0rem;
+    margin-bottom: 7.0rem;
+}
+
+.cart-item-remove:hover {
+    background-color: #FFB70D; /* Change background on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+
+

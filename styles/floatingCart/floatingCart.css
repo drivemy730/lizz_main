@@ -1,0 +1,117 @@
+/* Cart Icon Styling */
+.floating-cart 
+{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+
+
+.floating-cart .cart-count 
+{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.cart-icon 
+{
+    font-size: 30px; 
+    text-decoration: none; 
+    color: black; 
+    background-color: #f8f9fa;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-icon:hover 
+{
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+/* Virtual Cart List Styling */
+.virtualListCart 
+{
+    visibility: hidden; /* Initially hidden */
+    position: fixed;
+    background-color: white; /* Optional: for better visual clarity */
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 18.75rem; /* Adjust width of the cart list */
+    top: 4.75rem;
+    right: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    z-index: 1000;
+    cursor: pointer;
+   
+}
+
+.virtualListCart.show {
+    visibility: visible; /* Make visible when 'show' class is added */
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+/* List items inside the virtual cart */
+.virtualListCart ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.virtualListCart li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.virtualListCart li:last-child {
+    border-bottom: none;
+}
+
+.virtualListCart .product-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.virtualListCart .product-details {
+    display: flex;
+    align-items: center;
+}
+
+.virtualListCart .product-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.virtualListCart .product-price {
+    font-size: 12px;
+    color: gray;
+}
+
+.virtualListCart .product-quantity {
+    font-size: 12px;
+    color: darkgray;
+}
+
+/* Ensure the virtual list doesn't overflow the page */
+.virtualListCart 
+{
+    max-height: 300px; /* Limit height if there are many items */
+    overflow-y: auto; /* Allow scrolling if necessary */
+}
