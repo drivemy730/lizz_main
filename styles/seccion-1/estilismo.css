@@ -1,105 +1,12 @@
-.seccion-estilismo {
-    display: flex;
-    margin-top: 6rem;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.secccion-como-ayudarte
+/*++++++++++++++++++*/
+/*grooming section*/
+/*++++++++++++++++++*/
+.groomingSectionImagesAndTitle
 {
-    margin-bottom: 5rem;
-}
-.secccion-como-ayudarte-cajita-H3
-{
-    font-size: 2.10rem;
-    text-shadow: 0px 4px 4px #0DADB2; 
-    font-family: Kodchasan;
-    font-weight: 400;
-    text-transform: capitalize; 
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 8.5rem;
+    margin-top: 7rem;
 }
 
-.secccion-como-ayudarte-cajita-texto
-{
-    display: flex;
-    flex-direction: column;
-}
-.secccion-como-ayudarte-cajita-texto p{
-    font-family: Kodchasan;
-    font-size: 1.8rem; /* Slightly larger font size */
-    text-align: center;
-
-
-}
-
-
-.groomingSectionContainer
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-bottom: 10rem;
-}
-
-.secccion-como-ayudarte-cajita-perro-punch
-{
-    display: flex;
-    margin-right: 3rem;
-}
-
-.perro-PunchFace-sesion-ayudarte {
-    width: 17rem;
-}
-.perro-Peludo-sesion-ayudarte
-{
-    width: 17rem;
-}
-
-.secccion-como-ayudarte-cajita-perro-peludo
-{
-    display: flex;
-    gap: 3rem;
-}
-
-
-
-.seccion-estilismo h1 {
-    font-size: 2.18rem;
-    text-shadow: 0px 4px 4px #0DADB2; 
-    font-family: Kodchasan;
-    font-weight: 400;
-    text-transform: capitalize; 
-}
-
-
-
-.groomingSectionh3,
-.secccion-como-ayudarte-cajita-H3 {
-    text-align: center; /* Center the text */
-    font-size: 1.8rem; /* Increase font size */
-    font-weight: 700; /* Make the font bolder */
-    text-shadow: 0px 4px 4px #0DADB2; /* Keep the text shadow */
-    font-family: Kodchasan; /* Keep your font */
-    text-transform: capitalize; /* Capitalize text */
-    margin-top: 4rem; /* Top margin */
-    margin-bottom: 4.5rem; /* Bottom margin */
-    background: linear-gradient(90deg, #07a4a97e, #ffb60d79); /* Add a gradient background */
-    width: 90%;
-    margin-left: 4rem;
-    color: white; /* Change text color for contrast */
-    padding: 1rem; /* Add padding */
-    border-radius: 10px; /* Round the corners */
-    border-bottom: 4px solid #FFB70D; /* Optional underline */
-    transition: background 0.3s; /* Smooth background transition */
-}
-
-.groomingSectionh3:hover,
-.secccion-como-ayudarte-cajita-H3:hover {
-    transform: scale(1.05); /* Slightly scale up on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
-}
 
 .groomingSectionImagesAndTitle
 {
@@ -157,15 +64,6 @@
 
 }
 
-.titlePlacas h2
-{
-    font-size: 2.5rem;
-}
-.tituloGroominADomicilio:hover, .titlePlacas:hover
-{
-    transform: scale(1.05); /* Slightly scale up on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
-}
 
 .serviciosTextoCentro 
 {
@@ -176,14 +74,26 @@
     margin-top: 5rem;
     margin-bottom: 7rem;
 }
+/*++++++++++++++++++*/
+/*grooming section*/
+/*++++++++++++++++++*/
 
 
-.groomingServices1
+
+
+
+/*++++++++++++++++++*/
+/* PLACAS SECTION */
+/*++++++++++++++++++*/
+
+.titlePlacas h2
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    justify-content: center;
+    font-size: 2.5rem;
+}
+.tituloGroominADomicilio:hover, .titlePlacas:hover
+{
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
 }
 
 .flechaGrooming p , .flechaGrooming p, .flechaGrooming p{
@@ -209,8 +119,6 @@
 
 
 
-
-
 .flechaGrooming{
     color: white; /* Text color */
     border-radius: 10px; /* Rounded corners */
@@ -233,45 +141,16 @@
     
 
 }
+/*++++++++++++++++++*/
+/*++++++++++++++++++*/
 
 
 
 
-.groomingSectionBtn
-{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.cotizaButon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
-
-/* Button Styles */
-.cotizaButon button {
-    padding: 1rem 1rem; /* Increase padding for a larger button */
-    font-size: 1.5rem; /* Larger font size */
-    font-family: Kodchasan; /* Keep your font */
-    color: #fff; /* White text */
-    background-color: #07A4A9; /* Primary background color */
-    border: none; /* Remove default border */
-    border-radius: 20px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
-}
-
-/* Button Hover Effects */
-.cotizaButon button:hover {
-    background-color: #FFB70D; /* Change background on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
-}
-
-
+/*++++++++++++++++++*/
+/*++++++++++++++++++*/
 /* PLACAS SECTION */
 
 .placasSection
@@ -280,10 +159,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10rem;
 }
-
-
-
 
 .placasgSectionImagesAndTitle
 {
@@ -302,7 +179,6 @@
     margin-bottom: 5rem;
 }
 
-
 .placasSection-slideshow-container {
     display: flex;
     flex-direction: column;
@@ -313,9 +189,11 @@
     overflow: hidden; /* Hide any overflow from the images */
 }
 
+
 .slide {
     width: 20rem; /* Width of the slide */
     overflow: hidden; /* Ensure no overflow */
+    position: relative; /* Required for shadow positioning */
 }
 
 .slide img {
@@ -323,13 +201,170 @@
     height: auto; /* Maintain aspect ratio */
     max-height: 100%;; /* Adjust max height to fit within the container */
     object-fit: contain; /* Crop if necessary to maintain aspect ratio */
-
+   
 }
 
 .slide img:hover
 {
     transform: scale(2.00); /* Slightly scale up on hover */
 }
+
+
+.cotizaButon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cotizaButon button {
+    padding: 1rem 1rem; /* Increase padding for a larger button */
+    font-size: 1.5rem; /* Larger font size */
+    font-family: Kodchasan; /* Keep your font */
+    color: #fff; /* White text */
+    background-color: #07A4A9; /* Primary background color */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+
+.cotizaButon button:hover {
+    background-color: #FFB70D; /* Change background on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+/*++++++++++++++++++*/
+/*++++++++++++++++++*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*++++++++++++++++++*/
+/*++++++++++++++++++*/
+
+/*  grooming videos */
+
+.groomingServices1
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+.groomingVideosSectionTitle 
+{
+    text-align: center; /* Center the text */
+    font-size: 1.8rem; /* Increase font size */
+    font-weight: 700; /* Make the font bolder */
+    text-shadow: 0px 4px 4px #0DADB2; /* Keep the text shadow */
+    font-family: Kodchasan; /* Keep your font */
+    text-transform: capitalize; /* Capitalize text */
+    margin-top: 4rem; /* Top margin */
+    margin-bottom: 4.5rem; /* Bottom margin */
+    background: linear-gradient(90deg, #07a4a97e, #ffb60d79); /* Add a gradient background */
+    width: 90%;
+    margin-left: 4rem;
+    color: white; /* Change text color for contrast */
+    padding: 1rem; /* Add padding */
+    border-radius: 10px; /* Round the corners */
+    border-bottom: 4px solid #FFB70D; /* Optional underline */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+
+
+.groomingVideosSectionTitle:hover 
+{
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+
+.groomingSectionVideos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start */
+    gap: 2rem; /* Space between cards */
+}
+
+.groomingSectionVideosCompetencia,
+.groomingSectionVideosClips,
+.groomingSectionVideosCustomer {
+    width: 350px; /* Fixed width for each container */
+    height: 350px; /* Fixed height for each container */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for content */
+}
+
+.image-slider {
+    position: relative; /* For positioning slides */
+    overflow: hidden; /* Hide overflow for slides */
+    height: fit-content; /* Set height for the slideshow */
+}
+
+.slideCompetencia  {
+    display: none; /* Hide slides by default */
+}
+
+
+
+.slideCompetencia  img 
+{
+    width: 100%; /* Full width for images */
+    height: 100%; /* Maintain aspect ratio */
+}
+
+
+
+.groomingSectionVideosClips video {
+    width: 100%; /* Full width for video */
+    height: 100%; /* Full height for video */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.groomingSectionVideosCustomer img {
+    width: 100%; /* Full width for image */
+    height: 100%; /* Full height for image */
+    object-fit: contain; /* Cover to fill the space */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.groomingSectionVideosComments
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* Add transitions for the slides */
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade {
+    animation: fade 1s; /* Fade in effect */
+}
+
+
+/*++++++++++++++++++*/
+/*++++++++++++++++++*/
+
 
 
 @media(max-width:489px) {
