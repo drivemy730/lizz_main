@@ -6,8 +6,8 @@
 
 body{
     font-family: 'Kodchasan', sans-serif; 
-    color: #000000;
-    background-color: #AAAAAC;
+    color: black;
+    background-color:rgb(204, 255, 255);
 }
 
 .container{
@@ -26,6 +26,7 @@ p{
     display: inline-block;
     font-size: 1.8rem;
     line-height: 170%;
+    color: white;
 }
 
 
