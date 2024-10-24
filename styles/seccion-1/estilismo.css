@@ -162,12 +162,11 @@
     margin-bottom: 10rem;
 }
 
-.placasgSectionImagesAndTitle
-{
+.placasgSectionImagesAndTitle {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between; /* Change to space-between for better distribution */
     align-items: center;
-    gap: 10rem;
+    gap: 2rem; /* Reduce gap for smaller screens */
 }
 
 .placasSection-slideshow-Parentcontainer
@@ -304,17 +303,15 @@
 .groomingSectionVideosCompetencia,
 .groomingSectionVideosClips,
 .groomingSectionVideosCustomer {
-    width: 350px; /* Fixed width for each container */
-    height: 350px; /* Fixed height for each container */
+    width: 300px; /* Fixed width for each container */
+    height: 300px; /* Fixed height for each container */
     border-radius: 10px; /* Rounded corners */
     overflow: hidden; /* Hide overflow for content */
+    padding: 1rem;
+    background-color:rgb(36, 35, 35); ;
 }
 
-.image-slider {
-    position: relative; /* For positioning slides */
-    overflow: hidden; /* Hide overflow for slides */
-    height: fit-content; /* Set height for the slideshow */
-}
+
 
 .slideCompetencia  {
     display: none; /* Hide slides by default */
@@ -324,8 +321,10 @@
 
 .slideCompetencia  img 
 {
-    width: 100%; /* Full width for images */
-    height: 100%; /* Maintain aspect ratio */
+    width:100%; /* Full width for images */
+    height:18.6rem;/* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+
 }
 
 
@@ -339,7 +338,7 @@
 .groomingSectionVideosCustomer img {
     width: 100%; /* Full width for image */
     height: 100%; /* Full height for image */
-    object-fit: contain; /* Cover to fill the space */
+    object-fit:fill; /* Cover to fill the space */
     border-radius: 10px; /* Rounded corners */
 }
 
@@ -349,6 +348,44 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.groomingSectionVideosCommentsCompetencia, .groomingSectionVideosCommentsVideo, .groomingSectionVideosCommentsCustomer
+{
+    width: 300px; 
+    color: #000000; /* Darker text color for better contrast */
+}
+
+.groomingSectionVideosCommentsCompetencia p
+{
+    font-size: 1.5rem; /* Slightly larger font size */
+    display: flex; /* Align items horizontally */
+    text-align: center;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+}
+
+.groomingSectionVideosCommentsVideo , .groomingSectionVideosCommentsCustomer, .groomingSectionVideosCommentsCompetencia
+{
+    font-size: 1.5rem; /* Slightly larger font size */
+    display: flex; /* Align items horizontally */
+    text-align: center;
+    justify-content: center;
+    padding-top: 2rem;
+    align-items: center; /* Center items vertically */
+}
+
+
+    
+.groomingSectionVideosCommentsCustomer p
+{
+    font-size: 1.5rem; /* Slightly larger font size */
+    display: flex; /* Align items horizontally */
+    text-align: center;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+}
+
+
 
 
 /* Add transitions for the slides */
@@ -368,6 +405,23 @@
 
 
 @media(max-width:489px) {
+    
+    .placasgSectionImagesAndTitle {
+        flex-direction: column; /* Stack images and title */
+        align-items: center; /* Center items */
+        gap: 2rem; /* Space between items */
+    }
+
+    .imagesGrooming img {
+        max-width: 100%; /* Ensure images are responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .titlePlacas {
+        text-align: center; /* Center title text */
+    }
+    
+    
     .seccion-estilismo {
         flex-direction: column;
         gap: 2rem;
@@ -388,26 +442,46 @@
 }
 
 @media (min-width: 490px) and (max-width: 767px) {
-    .seccion-estilismo {
+    
+    .placasgSectionImagesAndTitle 
+    {
+        flex-direction: row; /* Row layout */
+        justify-content: space-between; /* Space out items */
+    }
+    
+    .seccion-estilismo 
+    {
         flex-direction: column;
         gap: 1rem;
     }
 
-    .seccion-estilismo-cajitaImagen-perros {
+    .imagesGrooming img
+     {
+        max-width: 100%; /* Responsive images */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+
+    .seccion-estilismo-cajitaImagen-perros
+     {
         width: 18rem;
         height: 9.65rem;
         gap: 1rem;
         margin-left: 1rem;
     }
 
-    .seccion-estilismo-cajitaTexto h1 {
+    .seccion-estilismo-cajitaTexto h1 
+    {
         font-size: 1.5rem;
     }
 
-    .seccion-estilismo-cajitaTexto p {
+    .seccion-estilismo-cajitaTexto p 
+    {
         font-size: 1.5rem;
     }
+
 }
+
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .seccion-estilismo {
