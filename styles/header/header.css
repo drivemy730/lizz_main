@@ -1,6 +1,8 @@
-/* Header Styles */
+/* rbg(94,200,174) */
 .gradient-header {
-    background: linear-gradient(135deg, #07A4A9, #FFB70D);
+    background:rgb(94, 167, 174);
+
+    
     background-size: 200% 200%;
     animation: gradientAnimation 5s ease infinite;
     display: flex;
