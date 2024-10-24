@@ -2,68 +2,85 @@
 /*++++++++++++++++++*/
 /*grooming section*/
 /*++++++++++++++++++*/
-.groomingSectionImagesAndTitle
+
+.groomingTopSectionContainter
 {
+    display: flex;
     margin-top: 7rem;
+    margin-bottom: 4rem;
+
 }
 
-
-.groomingSectionImagesAndTitle
+.groomingTopSectionDog
 {
+    height: 40rem; /* Adjust height as needed */
+    width: 100rem; /* Set a width that reflects vertical orientation */
+    background-size:cover; /* Ensure the image fits within the div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    border-radius: 1.0rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+}
+
+.groomingTopSectionTitleAndTextContainer{
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 5rem;
+    margin-top: 7rem;
+    background-color: rgb(94, 167, 174);
+    border-top-left-radius: 10px; /* Adjust the radius as needed */
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+
 }
 
-.groomingSectionImagesAndTitle h2
+.groomingTopSectionText
 {
- font-size: 2.0rem;
-}
-
-.imagesGrooming
-{
-    width: 15rem;
-}
-
-.pawIcon
-{
-    width: 3rem;
-    
-    
-}
-
-.tituloGroominADomicilio, .titlePlacas
-{
-   
-    display: flex;
-    justify-content: space-around;   
-    align-items: center;
-    color: rgb(0, 0, 0); /* Text color */
-    padding: 1rem; /* Padding inside the list item */
-    border-radius: 10px; /* Rounded corners */
-    text-align: center; /* Center text */
-    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-    width:38rem;
-}
-
-.tituloGroominADomicilio 
-{
-   
- display: flex;
- flex-direction: row;
- justify-content: space-between;
-}
-
-.groomingSectionText
-{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-family: Kodchasan; 
     text-align: center;
+    font-weight: bold;
 
 }
 
+
+.groomingTopSectionTitle
+{
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgb(36, 35, 35);
+    width: 35rem; /* Width of the item */
+    height: 5rem;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+
+    display: flex; /* Align items horizontally */
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    margin: 0.5rem 0; /* Top and bottom margin */
+    color: #ffffff; /* Darker text color for better contrast */
+    border-left: 5px solid #07A4A9; /* Accent border on the left */
+    transition: color 0.3s, border-left-color 0.3s, font-weight 0.3s; 
+
+}
+.groomingTopSectionTitle p
+{
+    font-size: 2.0rem; /* Slightly larger font size */
+}
+
+
+.groomingTopSectionTitle:hover
+{
+    
+    color: #FFB70D; /* Stronger, darker blue for better contrast */
+    border-left-color: #FFB70D; /* Bright yellow left border on hover */
+    font-weight: bold; /* Make the text bold on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to make text stand out */
+    cursor: pointer; /* Pointer cursor on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
 
 .serviciosTextoCentro 
 {
@@ -75,8 +92,151 @@
     margin-bottom: 7rem;
 }
 /*++++++++++++++++++*/
-/*grooming section*/
+/**/
 /*++++++++++++++++++*/
+
+
+/*++++++++++++++++++*/
+/*  grooming videos */
+/*++++++++++++++++++*/
+
+
+.groomingSectionVideosContainer 
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30rem;
+    align-items: flex-start; /* Align items at the start */
+    margin-top: 0%;
+   
+    
+}
+
+
+
+.groomingServices
+{
+    display: flex;
+    flex-direction: column;   
+    margin-left: 3.0rem;
+    margin-top: 6rem;
+}
+
+.groomingSectionVideosTitleContainer
+{
+    margin-top: 10rem;
+    margin-left: 3rem;
+}
+.groomingSectionVideosTitleContainer p
+{
+    font-size: 2.0rem;
+    font-family: Kodchasan; 
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+}
+
+.groomingSectionVideosTitle
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.groomingSectionVideosCompetencia,
+.groomingSectionVideosClips,
+.groomingSectionVideosCustomer {
+    width: 300px; /* Fixed width for each container */
+    height: 300px; /* Fixed height for each container */
+    border-top-left-radius: 1rem; /* Rounded corners */
+    border-top-right-radius: 1rem; /* Rounded corners */
+    margin-top: 8rem;
+    overflow: hidden; /* Hide overflow for content */
+    padding: 1rem;
+    background-color: rgb(94, 167, 174);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+
+}
+
+
+.slideCompetencia  {
+    display: none; /* Hide slides by default */
+}
+
+
+
+.slideCompetencia  img 
+{
+    width:100%; /* Full width for images */
+    height:18.6rem;/* Maintain aspect ratio */
+    border-top-right-radius: 1rem; /* Rounded corners */
+    border-top-left-radius: 1rem; /* Rounded corners */
+}
+
+
+.groomingSectionVideosCommentsCompetencia, .groomingSectionVideosCommentsVideo, .groomingSectionVideosCommentsCustomer
+{
+    width: 20.7rem; 
+    background-color: rgb(94, 167, 174);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+
+
+}
+
+
+
+.groomingSectionVideosCommentsCompetencia p, 
+.groomingSectionVideosCommentsVideo p, 
+.groomingSectionVideosCommentsCustomer p
+{
+    font-size: 1.3rem;
+    font-family: Kodchasan; 
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.groomingSectionVideosCommentsVideo , .groomingSectionVideosCommentsCustomer, .groomingSectionVideosCommentsCompetencia
+{
+    font-size: 1.5rem; /* Slightly larger font size */
+    display: flex; /* Align items horizontally */
+    text-align: center;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+}
+
+
+
+
+
+
+.groomingSectionVideosClips video {
+    width: 100%; /* Full width for video */
+    height: 100%; /* Full height for video */
+    border-top-right-radius: 1rem; /* Rounded corners */
+    border-top-left-radius: 1rem; /* Rounded corners */
+}
+
+.groomingSectionVideosCustomer img {
+    width: 100%; /* Full width for image */
+    height: 100%; /* Full height for image */
+    object-fit:fill; /* Cover to fill the space */
+    border-top-right-radius: 1rem; /* Rounded corners */
+    border-top-left-radius: 1rem; /* Rounded corners */
+}
+
+.groomingSectionVideosComments
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+    
 
 
 
@@ -86,11 +246,133 @@
 /* PLACAS SECTION */
 /*++++++++++++++++++*/
 
+.TagSectionContainer
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.TagSectionTitleAndTextContainer
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 15rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 20rem;
+    background-color: rgb(94, 167, 174);
+    border-top-left-radius: 10px; /* Adjust the radius as needed */
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+}
+
+.TagSectionTitle
+{
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgb(36, 35, 35);
+    width: 35rem; /* Width of the item */
+    height: 5rem;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: flex; /* Align items horizontally */
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    margin: 0.5rem 0; /* Top and bottom margin */
+    color: #ffffff; /* Darker text color for better contrast */
+    border-left: 5px solid #07A4A9; /* Accent border on the left */
+    transition: color 0.3s, border-left-color 0.3s, font-weight 0.3s; 
+}
+
+
+.TagSectionTitle p
+{
+    font-size: 2.0rem; /* Slightly larger font size */
+}
+
+
+.TagSectionTitle:hover
+{
+    
+    color: #FFB70D; /* Stronger, darker blue for better contrast */
+    border-left-color: #FFB70D; /* Bright yellow left border on hover */
+    font-weight: bold; /* Make the text bold on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to make text stand out */
+    cursor: pointer; /* Pointer cursor on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.TagSectionSlideShowContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    height: 50rem; /* Adjust height as needed */
+    width: 50rem; /* Set a width that reflects vertical orientation */
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    background-color: rgb(94, 167, 174);
+    background-size:cover; /* Ensure the image fits within the div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    border-radius: 1.0rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+   
+}
+
+.placasSection-slideshow-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(36, 35, 35);
+    height: 10rem; /* Set a fixed height for the slideshow container */
+    width: 20rem;
+    overflow: hidden; /* Hide any overflow from the images */
+    margin-left: 5rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+}
+
+
+.cotizaButon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cotizaButon button {
+    padding: 1rem 1rem; /* Increase padding for a larger button */
+    font-size: 1.5rem; /* Larger font size */
+    font-family: Kodchasan; /* Keep your font */
+    color: #fff; /* White text */
+    background-color: rgb(36, 35, 35);
+    margin-right: 9rem;
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+
+.cotizaButon button:hover {
+    background-color: #FFB70D; /* Change background on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
 .titlePlacas h2
 {
     font-size: 2.5rem;
 }
-.tituloGroominADomicilio:hover, .titlePlacas:hover
+
+.titlePlacas:hover
 {
     transform: scale(1.05); /* Slightly scale up on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
@@ -123,13 +405,13 @@
     color: white; /* Text color */
     border-radius: 10px; /* Rounded corners */
     background-color: rgb(36, 35, 35);
-    width: 25rem; /* Width of the item */
+    width: 20rem; /* Width of the item */
     margin: 0.5rem 0; /* Margin between items */
     transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-.groomingServices1 div:hover, .groomingServices2 div:hover,  .groomingServices3 div:hover{
+.groomingServices div:hover{
     transform: scale(1.05); /* Slightly scale up on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
 }
@@ -153,40 +435,9 @@
 /*++++++++++++++++++*/
 /* PLACAS SECTION */
 
-.placasSection
-{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10rem;
-}
 
-.placasgSectionImagesAndTitle {
-    display: flex;
-    justify-content: space-between; /* Change to space-between for better distribution */
-    align-items: center;
-    gap: 2rem; /* Reduce gap for smaller screens */
-}
 
-.placasSection-slideshow-Parentcontainer
-{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
 
-.placasSection-slideshow-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(36, 35, 35);
-    height: 12rem; /* Set a fixed height for the slideshow container */
-    overflow: hidden; /* Hide any overflow from the images */
-}
 
 
 .slide {
@@ -209,31 +460,7 @@
 }
 
 
-.cotizaButon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-
-.cotizaButon button {
-    padding: 1rem 1rem; /* Increase padding for a larger button */
-    font-size: 1.5rem; /* Larger font size */
-    font-family: Kodchasan; /* Keep your font */
-    color: #fff; /* White text */
-    background-color: #07A4A9; /* Primary background color */
-    border: none; /* Remove default border */
-    border-radius: 20px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
-}
-
-
-.cotizaButon button:hover {
-    background-color: #FFB70D; /* Change background on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
-}
 /*++++++++++++++++++*/
 /*++++++++++++++++++*/
 
@@ -253,137 +480,6 @@
 
 /*++++++++++++++++++*/
 /*++++++++++++++++++*/
-
-/*  grooming videos */
-
-.groomingServices1
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    justify-content: center;
-}
-
-
-.groomingVideosSectionTitle 
-{
-    text-align: center; /* Center the text */
-    font-size: 1.8rem; /* Increase font size */
-    font-weight: 700; /* Make the font bolder */
-    text-shadow: 0px 4px 4px #0DADB2; /* Keep the text shadow */
-    font-family: Kodchasan; /* Keep your font */
-    text-transform: capitalize; /* Capitalize text */
-    margin-top: 4rem; /* Top margin */
-    margin-bottom: 4.5rem; /* Bottom margin */
-    background: linear-gradient(90deg, #07a4a97e, #ffb60d79); /* Add a gradient background */
-    width: 90%;
-    margin-left: 4rem;
-    color: white; /* Change text color for contrast */
-    padding: 1rem; /* Add padding */
-    border-radius: 10px; /* Round the corners */
-    border-bottom: 4px solid #FFB70D; /* Optional underline */
-    transition: background 0.3s; /* Smooth background transition */
-}
-
-
-
-.groomingVideosSectionTitle:hover 
-{
-    transform: scale(1.05); /* Slightly scale up on hover */
-}
-
-
-.groomingSectionVideos {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align items at the start */
-    gap: 2rem; /* Space between cards */
-}
-
-.groomingSectionVideosCompetencia,
-.groomingSectionVideosClips,
-.groomingSectionVideosCustomer {
-    width: 300px; /* Fixed width for each container */
-    height: 300px; /* Fixed height for each container */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Hide overflow for content */
-    padding: 1rem;
-    background-color:rgb(36, 35, 35); ;
-}
-
-
-
-.slideCompetencia  {
-    display: none; /* Hide slides by default */
-}
-
-
-
-.slideCompetencia  img 
-{
-    width:100%; /* Full width for images */
-    height:18.6rem;/* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners */
-
-}
-
-
-
-.groomingSectionVideosClips video {
-    width: 100%; /* Full width for video */
-    height: 100%; /* Full height for video */
-    border-radius: 10px; /* Rounded corners */
-}
-
-.groomingSectionVideosCustomer img {
-    width: 100%; /* Full width for image */
-    height: 100%; /* Full height for image */
-    object-fit:fill; /* Cover to fill the space */
-    border-radius: 10px; /* Rounded corners */
-}
-
-.groomingSectionVideosComments
-{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.groomingSectionVideosCommentsCompetencia, .groomingSectionVideosCommentsVideo, .groomingSectionVideosCommentsCustomer
-{
-    width: 300px; 
-    color: #000000; /* Darker text color for better contrast */
-}
-
-.groomingSectionVideosCommentsCompetencia p
-{
-    font-size: 1.5rem; /* Slightly larger font size */
-    display: flex; /* Align items horizontally */
-    text-align: center;
-    justify-content: center;
-    align-items: center; /* Center items vertically */
-}
-
-.groomingSectionVideosCommentsVideo , .groomingSectionVideosCommentsCustomer, .groomingSectionVideosCommentsCompetencia
-{
-    font-size: 1.5rem; /* Slightly larger font size */
-    display: flex; /* Align items horizontally */
-    text-align: center;
-    justify-content: center;
-    padding-top: 2rem;
-    align-items: center; /* Center items vertically */
-}
-
-
-    
-.groomingSectionVideosCommentsCustomer p
-{
-    font-size: 1.5rem; /* Slightly larger font size */
-    display: flex; /* Align items horizontally */
-    text-align: center;
-    justify-content: center;
-    align-items: center; /* Center items vertically */
-}
 
 
 
