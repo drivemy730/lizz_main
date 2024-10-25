@@ -14,7 +14,7 @@
 .groomingTopSectionDog
 {
     height: 40rem; /* Adjust height as needed */
-    width: 100rem; /* Set a width that reflects vertical orientation */
+    width: 90rem; /* Set a width that reflects vertical orientation */
     background-size:cover; /* Ensure the image fits within the div */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center; /* Centers the image */
@@ -27,29 +27,36 @@
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5rem;
-    margin-top: 7rem;
-    background-color: rgb(94, 167, 174);
+    height: 33rem;
+    width: 100rem;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+    background-color: rgb(245,239,215);
     border-top-left-radius: 10px; /* Adjust the radius as needed */
     border-bottom-left-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+    box-shadow: 0 4px 15px hsla(0, 0%, 0%, 0.466); /* Adjust values as needed */
 
 }
 
 .groomingTopSectionText
 {
-    font-size: 1.3rem;
-    font-family: Kodchasan; 
-    text-align: center;
+    width: 45rem;
 
 }
 
+.groomingTopSectionText p
+{
+    color: #000000;
+    font-size: 1.8rem;
+    font-family: Kodchasan; 
+    text-align: center;
+    color: #000000;
+}
 
 .groomingTopSectionTitle
 {
     color: white; /* Text color */
     border-radius: 10px; /* Rounded corners */
-    background-color: rgb(36, 35, 35);
     width: 35rem; /* Width of the item */
     height: 5rem;
     transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
@@ -67,6 +74,8 @@
 .groomingTopSectionTitle p
 {
     font-size: 2.0rem; /* Slightly larger font size */
+    color: black;
+    font-weight: bold;
 }
 
 
@@ -81,13 +90,15 @@
     transform: scale(1.05); /* Slightly scale up on hover */
 }
 
-.serviciosTextoCentro 
+.groomingServices1 
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
     margin-top: 5rem;
+    margin-left: 17rem;
     margin-bottom: 7rem;
 }
 /*++++++++++++++++++*/
@@ -103,10 +114,11 @@
 .groomingSectionVideosContainer 
 {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 30rem;
+    justify-content: center;
+    margin-bottom: 10rem;
     align-items: flex-start; /* Align items at the start */
     margin-top: 0%;
+    gap: 5rem;
    
     
 }
@@ -118,17 +130,21 @@
     display: flex;
     flex-direction: column;   
     margin-left: 3.0rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
+    gap: 1rem;
 }
 
 .groomingSectionVideosTitleContainer
 {
-    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
     margin-left: 3rem;
+    
 }
 .groomingSectionVideosTitleContainer p
 {
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     font-family: Kodchasan; 
     text-align: center;
     font-weight: bold;
@@ -150,7 +166,7 @@
     border-top-right-radius: 1rem; /* Rounded corners */
     overflow: hidden; /* Hide overflow for content */
     padding: 1rem;
-    background-color: rgb(94, 167, 174);
+    background-color: rgb(172, 219 ,238);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
 
 }
@@ -174,12 +190,12 @@
 .groomingSectionVideosCommentsCompetencia, .groomingSectionVideosCommentsVideo, .groomingSectionVideosCommentsCustomer
 {
     width: 20.7rem; 
-    background-color: rgb(94, 167, 174);
+    background-color: rgb(172, 219 ,238);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    height: 5rem;
     margin-top: 0.5rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
-
 
 }
 
@@ -193,6 +209,7 @@
     font-family: Kodchasan; 
     text-align: center;
     font-weight: bold;
+    color: #000000;
     
 }
 
@@ -258,24 +275,27 @@ BENEFICIOS DEL GROOMMING
 
 .benefitsSectionTitleAndTextContainer
 {
+    
+
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    height: 25rem;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 5rem;
-    margin-top: 20rem;
-    background-color: rgb(94, 167, 174);
+    height: 33rem;
+    width: 100rem;
+    margin-bottom: 3rem;
+    margin-top: 9rem;
+    background-color: rgb(245,239,215);
     border-top-left-radius: 10px; /* Adjust the radius as needed */
     border-bottom-left-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+    box-shadow: 0 4px 15px hsla(0, 0%, 0%, 0.466); /* Adjust values as needed */
+
 }
 
-.benefitsSectionTitle
+.benefitsSectionTitle 
 {
-    color: white; /* Text color */
+    color: rgb(0, 0, 0); /* Text color */
     border-radius: 10px; /* Rounded corners */
-    background-color: rgb(36, 35, 35);
     width: 35rem; /* Width of the item */
     height: 5rem;
     transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
@@ -294,12 +314,20 @@ BENEFICIOS DEL GROOMMING
 .benefitsSectionTitle p
 {
     font-size: 1.5rem; /* Slightly larger font size */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
+.benefitsSectionText
+{
+    padding: 3rem;
+    width: 45REM;
+}
 .benefitsSectionText p
 {
     font-size: 1.5rem; /* Slightly larger font size */
     text-align: center;
+    color: #000000;
 
 }
 
@@ -321,8 +349,8 @@ BENEFICIOS DEL GROOMMING
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    height: 50rem; /* Adjust height as needed */
-    width: 80rem; /* Set a width that reflects vertical orientation */
+    height: 48rem; /* Adjust height as needed */
+    width: 120rem; /* Set a width that reflects vertical orientation */
     margin-top: 1rem;
     margin-bottom: 5rem;
     background-color: rgb(94, 167, 174);
@@ -334,6 +362,22 @@ BENEFICIOS DEL GROOMMING
    
 }
 
+
+
+/*GROOMING VIDEOS */
+
+.groomingSectionVideosAndTitleContainer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245,239,215);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+    border-radius: 1.0rem;
+    height: 42rem;
+
+
+
+}
 .placasSection-slideshow-container {
     display: flex;
     flex-direction: column;
@@ -342,11 +386,35 @@ BENEFICIOS DEL GROOMMING
     height: 10rem; /* Set a fixed height for the slideshow container */
     width: 20rem;
     overflow: hidden; /* Hide any overflow from the images */
-    margin-left: 5rem;
+    margin-left: 7rem;
     margin-top: 2rem;
     border-radius: 2rem;
 }
 
+
+
+.groomingTagSectionContainer
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    height: 33rem;
+    width: 100rem;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+    background-color: rgb(245,239,215);
+    border-top-left-radius: 10px; /* Adjust the radius as needed */
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 15px hsla(0, 0%, 0%, 0.466); /* Adjust values as needed */
+}
+
+.groomingVideosSection
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
 
 .cotizaButon {
     display: flex;
@@ -413,7 +481,7 @@ BENEFICIOS DEL GROOMMING
     color: white; /* Text color */
     border-radius: 10px; /* Rounded corners */
     background-color: rgb(36, 35, 35);
-    width: 20rem; /* Width of the item */
+    width: 22rem; /* Width of the item */
     margin: 0.5rem 0; /* Margin between items */
     transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
