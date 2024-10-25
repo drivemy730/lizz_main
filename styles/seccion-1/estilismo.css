@@ -41,7 +41,6 @@
     font-size: 1.3rem;
     font-family: Kodchasan; 
     text-align: center;
-    font-weight: bold;
 
 }
 
@@ -149,7 +148,6 @@
     height: 300px; /* Fixed height for each container */
     border-top-left-radius: 1rem; /* Rounded corners */
     border-top-right-radius: 1rem; /* Rounded corners */
-    margin-top: 8rem;
     overflow: hidden; /* Hide overflow for content */
     padding: 1rem;
     background-color: rgb(94, 167, 174);
@@ -235,6 +233,9 @@
 }
 
 
+/*
+BENEFICIOS DEL GROOMMING 
+*/
 
     
 
@@ -246,7 +247,7 @@
 /* PLACAS SECTION */
 /*++++++++++++++++++*/
 
-.TagSectionContainer
+.benefitsSectionContainer
 {
     display: flex;
     flex-direction: row;
@@ -255,12 +256,12 @@
 }
 
 
-.TagSectionTitleAndTextContainer
+.benefitsSectionTitleAndTextContainer
 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    height: 15rem;
+    height: 25rem;
     align-items: center;
     margin-bottom: 5rem;
     margin-top: 20rem;
@@ -270,7 +271,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
 }
 
-.TagSectionTitle
+.benefitsSectionTitle
 {
     color: white; /* Text color */
     border-radius: 10px; /* Rounded corners */
@@ -290,13 +291,20 @@
 }
 
 
-.TagSectionTitle p
+.benefitsSectionTitle p
 {
-    font-size: 2.0rem; /* Slightly larger font size */
+    font-size: 1.5rem; /* Slightly larger font size */
+}
+
+.benefitsSectionText p
+{
+    font-size: 1.5rem; /* Slightly larger font size */
+    text-align: center;
+
 }
 
 
-.TagSectionTitle:hover
+.benefitsSectionTitle:hover
 {
     
     color: #FFB70D; /* Stronger, darker blue for better contrast */
@@ -307,14 +315,14 @@
     transform: scale(1.05); /* Slightly scale up on hover */
 }
 
-.TagSectionSlideShowContainer
+.benefitsSectionSlideShowContainer
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
     height: 50rem; /* Adjust height as needed */
-    width: 50rem; /* Set a width that reflects vertical orientation */
+    width: 80rem; /* Set a width that reflects vertical orientation */
     margin-top: 1rem;
     margin-bottom: 5rem;
     background-color: rgb(94, 167, 174);
